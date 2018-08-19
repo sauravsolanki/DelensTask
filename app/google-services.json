@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "308465703113",
+    "firebase_url": "https://delentask.firebaseio.com",
+    "project_id": "delentask",
+    "storage_bucket": "delentask.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:308465703113:android:cd5f641c5af04683",
+        "android_client_info": {
+          "package_name": "com.example.saurav.delenstask"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "308465703113-6eklal384b5ggt2r1cq4melufvgibj5u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.saurav.delenstask",
+            "certificate_hash": "d2a4b4965f8b9dab3b4c99e095b5944fdbe4af05"
+          }
+        },
+        {
+          "client_id": "308465703113-uhebpbs6qneocqj0rgn98dsq5riki64n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuUyjwP2Sve70ns67ODfJfvDuAS0y-czQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "308465703113-uhebpbs6qneocqj0rgn98dsq5riki64n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

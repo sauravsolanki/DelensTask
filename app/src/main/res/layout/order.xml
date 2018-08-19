@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/TVODJobType"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/job_type_color"
+        android:gravity="start"
+        android:paddingLeft="10dp"
+        android:text="Electrician"
+        android:textColor="@android:color/white"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/TVODDeliveredDate"
+        android:layout_width="334dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TVODJobType"
+        android:background="@color/address_background_color"
+        android:gravity="start"
+        android:paddingLeft="5dp"
+        android:text="Mon,Dec 04,11:54 AM"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/TVODStatus"
+        android:layout_width="267dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/TVODDeliveredDate"
+        android:background="@color/address_background_color"
+        android:gravity="end"
+        android:paddingRight="5dp"
+        android:text="Pending"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/TVODAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TVODStatus"
+        android:background="@color/address_background_color"
+        android:maxWidth="200dp"
+        android:paddingLeft="5dp"
+        android:text="Address..... .... ..\n..........\n.."
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/TVODAddress"
+        android:background="@android:color/black" />
+
+    <LinearLayout
+        android:id="@+id/LLStatus"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TVODAddress"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_person_black_24dp" />
+
+        <TextView
+            android:id="@+id/TVODPersonAssigned"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="Job Yet Not Assigned"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            app:srcCompat="@drawable/ic_pin_drop_black_24dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/LLStatus"
+        android:layout_marginBottom="2dp"
+        android:background="@android:color/black" />
+
+    <LinearLayout
+        android:id="@+id/TVODAmountAndDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/LLStatus"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:text="Rate :"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/TVODRate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:text="Rs. 50 - Rs. 200 Per Hour"
+                android:textSize="19sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:text="Tax :"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/TVODTax"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:text="null(SGST)"
+                android:textSize="19sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:text="Discount"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/TVODDiscount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:text="0.0"
+                android:textSize="19sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:text="Grand Total :"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/TVODGrantTotalAmount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:text="0.0"
+                android:textSize="19sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:text="Start time :"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/TVODStartTime"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:text="Mon,13 Aug 18,11:45 AM"
+                android:textSize="19sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:text="End Time :"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/TVODEndTime"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:text="Fri,17 Aug 18,3:45 PM"
+                android:textSize="19sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:text="Total Time :"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/TVODTotalTime"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:text="5 days, 12 hours"
+                android:textSize="19sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:text="Payment Status"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/TVODPaymentStatus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:text="Pending"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="19sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/TVODAmountAndDate"
+        android:background="@android:color/black" />
+
+    <TextView
+        android:id="@+id/TVODJobDetailLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TVODAmountAndDate"
+        android:layout_marginTop="10dp"
+        android:text="Job Details"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/TVODJobDetailLabel"
+        android:background="@android:color/black" />
+
+    <LinearLayout
+        android:id="@+id/TVODLabelServiceFor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TVODJobDetailLabel"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TVLabelJOb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Service Required for ?"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/TVODServicesFor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fan,light and Switch Repair"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LLODLabelServicePlace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TVODLabelServiceFor"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Where do you require the services ? "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/TVODServicePlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Office"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/LLODLabelServicePlace"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginRight="-10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/button_color"
+        android:text="Cancel Booking"
+        android:textColor="@android:color/white"
+        android:visibility="visible" />
+
+
+</RelativeLayout>

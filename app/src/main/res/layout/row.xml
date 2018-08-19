@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp">
+
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignBottom="@+id/TVJobType"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="start"
+            android:textAlignment="textStart"
+            app:srcCompat="@drawable/ic_person_black_24dp" />
+
+        <TextView
+            android:id="@+id/TVdeliveredDate"
+            android:layout_width="170dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="108dp"
+            android:textSize="15sp"
+            tools:text="Mon,Dec 04,11:45AM" />
+
+        <TextView
+            android:id="@+id/TVStatus"
+            android:layout_width="192dp"
+            android:layout_height="33dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:gravity="end"
+            android:textAlignment="textEnd"
+            android:textColor="@color/cardview_shadow_start_color"
+            tools:text="Pending" />
+
+        <TextView
+            android:layout_marginTop="3dp"
+            android:id="@+id/TVID"
+            android:layout_width="118dp"
+            android:layout_height="20dp"
+            android:layout_above="@+id/TVJobType"
+            android:layout_alignStart="@+id/TVdeliveredDate"
+            android:layout_marginBottom="-60dp"
+            tools:text="BN66178" />
+
+        <TextView
+            android:id="@+id/TVTotalAmount"
+            android:layout_width="179dp"
+            android:layout_height="20dp"
+
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:gravity="end"
+            android:textAlignment="textEnd"
+            android:textColor="@color/cardview_shadow_start_color"
+            android:textSize="15dp"
+            tools:text="Rs. 0" />
+
+        <TextView
+            android:id="@+id/TVJobType"
+            android:layout_width="275dp"
+            android:layout_height="25dp"
+            android:layout_alignLeft="@+id/TVdeliveredDate"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/TVdeliveredDate"
+            android:layout_marginTop="60dp"
+            tools:text="Electrician : Rohan" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
